@@ -1,0 +1,212 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Body Styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+  }
+  
+  h2 {
+    color: #333; /* Dark gray for heading */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #6f4f1f; /* Coffee brown color */
+    color: white;
+  }
+  
+  header img.logo {
+    width: 100px;  /* Adjust the size as needed */
+    height: 100px; /* Ensure the height matches the width for a perfect circle */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area, preserving aspect ratio */
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    color: #f4a261; /* Warm orange on hover */
+  }
+      /* Hero Section */
+  .hero {
+    background-image: url('coffee-hero.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  /* Call-to-Action Button */
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #e07b35;
+  }
+  
+  /* Menu Section */
+  #menu {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four items in a row */
+    gap: 20px;
+  }
+  
+  .menu-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image fits the space */
+    max-height: 250px;
+  }
+  
+  .menu-item h3 {
+    font-size: 1.8rem;
+    color: #2d2d2d; /* Dark text color */
+    margin-top: 15px;
+  }
+  
+  .menu-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #4caf50; /* Modern green */
+    margin-top: 10px;
+  }
+  
+  /* About Us & Contact Section */
+  #about, #contact {
+    padding: 50px 20px;
+    background: #ffffff;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #6f4f1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e07b35;
+  }
+  
+  /* Footer Section */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #6f4f1f;
+    color: white;
+  }
+  
+  /* Modern Color Scheme */
+  .menu-item {
+    background: #fff; /* White background for modern clean look */
+    border: 1px solid #f2f2f2;
+  }
+  
+  .cta-button {
+    background-color: #ff7043; /* Vibrant coral */
+  }
+  
+  .cta-button:hover {
+    background-color: #ff5722; /* Darker coral */
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .menu-items {
+      grid-template-columns: 1fr 1fr; /* Two items per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-items {
+      grid-template-columns: 1fr; /* One item per row on mobile */
+    }
+  }
+  
